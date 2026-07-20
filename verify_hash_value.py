@@ -8,6 +8,7 @@ print("original SHA-3 Hash",original_hash)
 #verify data integrity
 received_value=input("\n enter the received value: ")
 received_value=hashlib.sha3_256(received_value.encode()).hexdigest()
+print("received value",received_value)
 if original_hash==received_value:
     print("data integrity is verified:the received data is unchanged")
 else:
